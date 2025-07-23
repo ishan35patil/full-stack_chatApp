@@ -12,12 +12,14 @@ spec:
     metadata:
       name: backend-pod
       namespace: chat-app
-      labels: 
+      labels:
         app: backend
+
     spec:
+
       containers:
       - name: chatapp-backend
-        image: trainwithshubham/chatapp-backend:latest
+        image: ishan3535/chatapp-backend:latest
         ports:
         - containerPort: 5001
         env:
